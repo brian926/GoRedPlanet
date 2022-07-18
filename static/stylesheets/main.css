@@ -1,6 +1,12 @@
 body {
     background: lightyellow;
     font: 18px Arial, sans-serif;
+    text-align: center;
+}
+
+header nav form{
+    display: inline-block;
+    margin: 0 10px;
 }
 
 h2 {
