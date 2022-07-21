@@ -1,14 +1,48 @@
 body {
     background: lightyellow;
     font: 18px Arial, sans-serif;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+header li {
+    display: inline-block;
+    padding: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    color: red;
     text-align: center;
 }
 
-header nav form{
-    display: inline-block;
-    margin: 0 10px;
+.apod {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
 }
 
-h2 {
-    color: red;
+main img {
+    display: block;
+    width: 100%;
+    height: auto; /* maintain aspect ratio*/
+    margin: auto; /*optional centering of image*/
+    padding: 20px 0;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -10,16 +10,19 @@
 <body>
     <header>
         <nav>
-            <form> <button>Home</button> </form>
-            <form> <button>Rover 1</button> </form>
-            <form> <button>Rover 2</button> </form>
-            <form> <button>Rover 3</button> </form>
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Rover 1</a> </li>
+                <li> <a href="#">Rover 2</a> </li>
+                <li> <a href="#">Rover 3</a> </li>
+            </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h2>Hello World!</h2>
-            <image src={{.}}>
+            <h1>Astronomy Picture of the Day!</h1>
+            <img class="apod" src={{.Url}} alt="Astronomy Picture of the Day from NASA">
+            <p class="apod">{{.Explanation}}</p>
         </section>
     </main>
     <footer>

@@ -14,8 +14,8 @@ type Apod struct {
 	Date        string `json:"data"`
 }
 
-func picOfDay() string {
-	test := ""
+func picOfDay() Apod {
+	test := "9Ab5USZ5dpigufAt3lq4XnjKa1dWBBdRuAOOhfSl"
 	resp, err := http.Get("https://api.nasa.gov/planetary/apod?api_key=" + test)
 	if err != nil {
 		log.Fatalln(err)
@@ -29,7 +29,7 @@ func picOfDay() string {
 	var apod Apod
 	json.Unmarshal(body, &apod)
 
-	return apod.Url
+	return apod
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
